@@ -1,0 +1,28 @@
+.label {
+  width: fit-content;
+  background-color: #001d55;
+  min-width: 150px;
+
+  p {
+    color: white;
+    padding-block: 0.8rem;
+    font-size: 1.1rem;
+    margin-bottom: 0;
+    text-align: center;
+    padding-inline: 1rem;
+  }
+  .triangle {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 0px solid transparent; /* half of the square's width */
+    border-right: 20px solid transparent; /* half of the square's width */
+    border-top: 20px solid #001d55;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .label {
+    min-width: 130px;
+  }
+}

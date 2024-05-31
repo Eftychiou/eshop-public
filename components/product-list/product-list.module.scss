@@ -1,0 +1,40 @@
+.mainContainer {
+  & > hr {
+    width: 50%;
+  }
+  .updateProductForm {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+    .outer_container {
+      .product {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--color-primary-100);
+        padding: var(--size-2);
+        border-radius: 15px;
+        transition: all 0.3s;
+
+        h4 {
+          font-size: 20px;
+        }
+        .buttons_container {
+          display: flex;
+          gap: 4px;
+          .button {
+            padding: 0 8px;
+            border-radius: 15px;
+          }
+        }
+        &.selected {
+          background-color: plum;
+        }
+      }
+    }
+  }
+}

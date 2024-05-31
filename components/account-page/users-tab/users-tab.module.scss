@@ -1,0 +1,50 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  justify-content: center;
+  div {
+    margin: var(--size-1);
+    border-radius: 15px;
+    padding: var(--size-2);
+    position: relative;
+    width: 200px;
+    cursor: pointer;
+    box-shadow: inset 5px 5px 10px var(--color-primary-100);
+    p {
+      font-size: 14px;
+      margin: 0;
+    }
+  }
+  div.user {
+    background-color: var(--color-primary-100);
+    &:hover {
+      background-color: var(--color-primary-50);
+      cursor: pointer;
+    }
+    &:active {
+      background-color: var(--color-primary-200);
+    }
+    h2:after {
+      content: ' \2753';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -35px;
+      margin-left: -25px;
+      opacity: 0.2;
+      font-size: 50px;
+    }
+    h3:after {
+      content: '\2728';
+      float: left;
+      font-size: 15px;
+    }
+  }
+  div.userDisable {
+    background-color: rgb(226, 110, 110);
+    &:hover {
+      background-color: var(--color-primary-50);
+    }
+  }
+}

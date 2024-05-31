@@ -1,0 +1,36 @@
+.category_page {
+  padding-bottom: 5em;
+  .image {
+    height: 50vh;
+    position: relative;
+    background-size: cover !important;
+    background-attachment: fixed !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20%;
+  }
+  .title_section {
+    margin-bottom: 3rem;
+    h1 {
+      font-size: 4rem;
+    }
+    .categories {
+      display: flex;
+      gap: 2rem;
+      & > :not(:first-child) {
+        div {
+          border: none;
+        }
+      }
+    }
+  }
+
+  .product_list {
+    padding-inline: 4rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8rem;
+  }
+}

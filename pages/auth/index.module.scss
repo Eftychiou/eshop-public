@@ -1,0 +1,120 @@
+$white: rgba(255, 255, 255, 0.3);
+.AuthenticationPage {
+  display: flex;
+  height: 100vh;
+  background: linear-gradient(45deg, #fc466b, #3f5efb);
+
+  .formContainer {
+    background: $white;
+    padding: 2rem 4rem;
+    border-radius: 20px;
+    border-left: 1px solid $white;
+    border-top: 1px solid $white;
+    backdrop-filter: blur(10px);
+    box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .title {
+      font-weight: 500;
+      color: #fff;
+      opacity: 0.7;
+      font-size: 1.4rem;
+      margin-top: 0;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    form {
+      margin-bottom: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      width: 320px;
+      input {
+        background: transparent;
+        padding: 1em;
+        margin-bottom: 2em;
+        border: none;
+        border-left: 1px solid $white;
+        border-top: 1px solid $white;
+        border-radius: 5000px;
+        backdrop-filter: blur(5px);
+        box-shadow: 4px 4px 60px rgba(0, 0, 0, 0.2);
+        font-family: Montserrat, sans-serif;
+        font-weight: 500;
+        transition: all 0.2s ease-in-out;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        margin: 0;
+        color: #fff;
+        &:hover {
+          background: rgba(255, 255, 255, 0.1);
+          box-shadow: 4px 4px 60px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        &[type='email'],
+        &[type='password'] {
+          &:focus {
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 4px 4px 60px 8px rgba(0, 0, 0, 0.2);
+          }
+        }
+        &::placeholder {
+          font-family: Montserrat, sans-serif;
+          font-weight: 400;
+          color: #fff;
+          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+        }
+        &[type='submit'] {
+          margin-top: 10px;
+          width: 150px;
+          font-size: 1rem;
+          margin: auto;
+          margin-top: 1rem;
+          &:hover {
+            cursor: pointer;
+          }
+
+          &:active {
+            background: rgba(255, 255, 255, 0.2);
+          }
+        }
+      }
+    }
+    .switcher_container {
+      margin-top: 2rem;
+      .switcher {
+        text-decoration: none;
+        color: #ddd;
+        font-size: 12px;
+        margin: 0;
+        cursor: pointer;
+        &:hover {
+          text-shadow: 2px 2px 6px #00000040;
+        }
+
+        &:active {
+          text-shadow: none;
+        }
+      }
+    }
+  }
+  a,
+  input:focus,
+  select:focus,
+  textarea:focus,
+  button:focus {
+    outline: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .AuthenticationPage {
+    .formContainer {
+      min-width: 100%;
+    }
+  }
+}

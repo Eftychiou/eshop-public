@@ -1,0 +1,25 @@
+.Header {
+  background-color: rgba(0, 128, 0, 0);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-height: 100px;
+  height: 100px;
+  z-index: 2;
+  position: fixed;
+  width: 100vw;
+  transition: top 0.3s;
+  width: fit-content;
+  right: 0;
+  width: 100%;
+}
+
+.disable {
+  transition: all 1s;
+  transform: translateY(-100px);
+}
+.enable {
+  transition: all 0.3s;
+  transform: translateY(0);
+}

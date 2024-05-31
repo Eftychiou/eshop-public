@@ -1,0 +1,68 @@
+.pick_image {
+  .outerContainer {
+    background-color: red;
+    width: 100% !important;
+    text-align: center;
+    background-color: white;
+    border: 1px solid #cccccc;
+    border-radius: 15px;
+    .container {
+      width: 100%;
+      padding: 0;
+      position: relative;
+      input {
+        display: none;
+        padding: 10px;
+      }
+      ul {
+        margin: auto;
+        padding: var(--size-1);
+        width: 60%;
+        gap: var(--size-1);
+        display: flex;
+        height: 210px;
+        align-items: center;
+        justify-content: center;
+        .image {
+          position: relative;
+          place-content: center center;
+          height: 100%;
+          flex-basis: 200px;
+          border-radius: 1.5rem;
+          cursor: pointer;
+          transition: 0.3s all;
+          scale: 1;
+
+          &:hover {
+            scale: 1.05;
+          }
+          &:active {
+            scale: 1.15;
+          }
+          img {
+            border-radius: 1rem;
+            object-fit: cover;
+            border: hidden;
+          }
+          &.selectedImage {
+            border: 5px solid var(--color-primary-300);
+            scale: 1.1;
+            z-index: 99;
+          }
+        }
+      }
+    }
+    .controlButtons {
+      display: inline-block;
+      position: absolute;
+      width: fit-content;
+      right: 0;
+      top: 0;
+      button {
+        width: fit-content !important;
+        display: inline-block;
+        margin: 10px;
+      }
+    }
+  }
+}

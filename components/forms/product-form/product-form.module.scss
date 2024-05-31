@@ -1,0 +1,61 @@
+.product_form {
+  & > div {
+    flex-wrap: wrap;
+    display: flex;
+    gap: 1rem 0.8rem;
+    flex-direction: row !important;
+    width: 100%;
+    & > div {
+      width: 100%;
+      &:nth-child(1) {
+        flex: 1 1 30%;
+      }
+
+      &:nth-child(2) {
+        flex: 1 1 30%;
+      }
+
+      &:nth-child(3) {
+        flex: 1 1 30%;
+      }
+
+      &:nth-child(4) {
+        flex: 1 1 20%;
+      }
+
+      &:nth-child(5) {
+        flex: 1 1 20%;
+      }
+
+      &:nth-child(6) {
+        flex: 1 1 20%;
+      }
+
+      &:nth-child(7) {
+        flex: 1 1 20%;
+      }
+
+      &:nth-child(8) {
+        flex: 0 0 60%;
+        margin: auto;
+      }
+
+      &:nth-child(9) {
+        flex: 1 1 45%;
+        textarea {
+          height: unset;
+        }
+      }
+
+      &:nth-child(10) {
+        flex: 1 1 45%;
+        textarea {
+          height: unset;
+        }
+      }
+    }
+  }
+  .submitBtn {
+    margin-top: 2rem;
+  }
+}

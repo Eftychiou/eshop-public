@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto&family=Source+Sans+Pro:wght@300&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Amatic+SC:400,700);
+@import './common.css';
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: #252525;
+  font-family: 'Roboto', sans-serif;
+  user-select: none;
+  font-size: 1rem;
+  text-decoration: none !important;
+}
+
+::-webkit-scrollbar {
+  width: var(--scrollbar-width);
+}
+::-webkit-scrollbar-track {
+  background-color: #f9f9f9;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--theme-color-main);
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #4b4b4b;
+}
+
+hr {
+  border-top: 1px solid #bbbfbf;
+  display: block;
+  height: 1px;
+  line-height: 19px;
+}
+@media only screen and (max-width: 768px) {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}

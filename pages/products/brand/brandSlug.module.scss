@@ -1,0 +1,22 @@
+.brand_page {
+  padding-bottom: 5em;
+  .title_section {
+    background-color: rgb(48, 43, 43);
+    height: 50vh;
+    display: grid;
+    place-items: center;
+    margin-bottom: 4rem;
+    h1 {
+      color: white;
+      font-size: 4rem;
+    }
+  }
+
+  .product_list {
+    padding-inline: 4rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8rem;
+  }
+}

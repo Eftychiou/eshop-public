@@ -1,0 +1,53 @@
+.dashboard {
+  min-width: 240px;
+  height: 100vh;
+  padding: var(--size-4);
+  background-color: #f1f1f1;
+  list-style: none;
+  text-align: left;
+  h1.username {
+    text-transform: capitalize;
+    margin-bottom: 0px;
+    color: #3f3e3e;
+    text-align: center;
+  }
+  .tabList {
+    display: flex;
+    flex-direction: column;
+    div {
+      white-space: nowrap;
+      padding: var(--size-1);
+      transition: all 0.3s;
+      cursor: pointer;
+      color: unset;
+      &:hover {
+        scale: 1.1;
+      }
+      &:active {
+        scale: 1.2;
+      }
+      &.activeTab {
+        background-color: #bfbfbf;
+        transform: translate(10px, 0);
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+      }
+    }
+  }
+  .time {
+    text-align: center;
+    span {
+      padding: 0;
+      margin: 0;
+      font-weight: bolder;
+      color: var(--color-grey-800);
+    }
+    time {
+      padding: var(--size-2);
+      display: block;
+    }
+  }
+  .line {
+    margin-top: 25px;
+  }
+}

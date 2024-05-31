@@ -1,0 +1,36 @@
+.parallax {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background-color: #faeaea;
+  padding-bottom: 2rem;
+  .parallaxContent {
+    z-index: 1;
+  }
+  .parallaxBackground {
+    background: url('/images/about-page/background.png');
+    width: 100%;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+  }
+  .parallaxBackgroundTriangles {
+    background: url('/images/about-page/background-triangles.png');
+    background-repeat: repeat;
+    width: 100%;
+    height: 100%;
+
+    background-size: contain;
+    position: absolute;
+    right: 0;
+    top: -100px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .parallaxBackgroundTriangles {
+    top: 100vh !important;
+    background-repeat: no-repeat !important;
+  }
+}

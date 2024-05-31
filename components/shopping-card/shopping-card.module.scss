@@ -1,0 +1,61 @@
+.shoppingCard {
+  display: flex;
+  justify-content: center;
+  color: var(--color-grey-100);
+  background-color: white;
+  box-shadow: 5px 5px 15px 5px #161616;
+  position: fixed;
+  top: 0;
+  width: 712px;
+  height: 80%;
+  right: calc(50% - 356px);
+  border-radius: 1rem;
+  z-index: 200;
+  &.appear {
+    animation: appearFromTop 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+  }
+  &.disappear {
+    animation: disappearFromTop 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+  }
+}
+
+@keyframes appearFromTopSmall {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(60px);
+    opacity: 1;
+  }
+}
+@keyframes disappearFromTopSmall {
+  0% {
+    transform: translateY(60px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+@keyframes appearFromTop {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes disappearFromTop {
+  0% {
+    transform: translateY(125px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}

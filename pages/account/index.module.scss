@@ -1,0 +1,21 @@
+.account_page {
+  flex-grow: 1;
+  display: flex;
+  align-items: flex-start;
+  text-align: center;
+
+  .rightContainer {
+    flex-grow: 1;
+    height: 100vh;
+    margin: 0 auto;
+    padding: var(--size-8) 16%;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+
+    overflow: auto;
+    padding-top: 70px;
+  }
+  .backButton {
+    display: none;
+  }
+}

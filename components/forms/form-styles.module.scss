@@ -1,0 +1,10 @@
+.form {
+  & > div {
+    flex-wrap: wrap;
+    display: flex;
+    gap: 1rem 0.8rem;
+
+    flex-direction: column;
+    width: 100%;
+  }
+}
